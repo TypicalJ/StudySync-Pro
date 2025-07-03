@@ -1,0 +1,53 @@
+<!-- study-plan.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Plan - StudySync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>📘 StudySync Pro</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>📅 Create Your Study Plan</h2>
+
+    <form id="planForm">
+      <label for="subjects">Enter Subjects (comma-separated):</label>
+      <input type="text" id="subjects" name="subjects" placeholder="e.g. Math, History, Biology" required>
+
+      <label for="goals">Study Goals:</label>
+      <textarea id="goals" name="goals" placeholder="e.g. Prepare for midterms, review key chapters..." required></textarea>
+
+      <button type="submit" class="btn">Generate Plan</button>
+    </form>
+
+    <section id="scheduleOutput" style="display:none;">
+      <h3>Your Weekly Study Schedule</h3>
+      <div class="schedule">
+        <ul>
+          <li><strong>Monday:</strong> Math - Review notes</li>
+          <li><strong>Tuesday:</strong> History - Read Chapters 3-4</li>
+          <li><strong>Wednesday:</strong> Biology - Practice Quiz</li>
+          <li><strong>Thursday:</strong> Math - Solve problem sets</li>
+          <li><strong>Friday:</strong> History - Flashcards</li>
+          <li><strong>Saturday:</strong> Biology - Review + quiz</li>
+          <li><strong>Sunday:</strong> Rest or catch up</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 StudySync Pro</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
