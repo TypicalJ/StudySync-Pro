@@ -22,3 +22,14 @@ if (quizForm) {
     quizOutput.style.display = "block";
   });
 }
+// Concept Explainer Simulation
+const explainForm = document.getElementById("explainForm");
+const explanationOutput = document.getElementById("explanationOutput");
+
+if (explainForm) {
+  explainForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    explainForm.style.display = "none";
+    explanationOutput.style.display = "block";
+  });
+}

@@ -119,3 +119,10 @@ textarea {
 .quiz-list li {
   margin-bottom: 1.5rem;
 }
+#fakeExplanation {
+  background-color: #f3f8ff;
+  padding: 1rem;
+  border-left: 5px solid #007acc;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
