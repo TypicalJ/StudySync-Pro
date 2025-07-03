@@ -11,3 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+// Quiz form simulation
+const quizForm = document.getElementById("quizForm");
+const quizOutput = document.getElementById("quizOutput");
+
+if (quizForm) {
+  quizForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    quizForm.style.display = "none";
+    quizOutput.style.display = "block";
+  });
+}

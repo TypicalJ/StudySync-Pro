@@ -111,3 +111,11 @@ textarea {
   padding: 0.5rem 0;
   border-bottom: 1px solid #eee;
 }
+.quiz-list {
+  list-style: decimal;
+  padding-left: 1.2rem;
+}
+
+.quiz-list li {
+  margin-bottom: 1.5rem;
+}
