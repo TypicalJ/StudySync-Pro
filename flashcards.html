@@ -1,61 +1,67 @@
-<!-- flashcards.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flashcards - StudySync</title>
+  <title>Flashcards | StudySync Pro</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .flashcard {
+      width: 250px;
+      height: 150px;
+      margin: 10px;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.4s ease;
+      font-weight: bold;
+      text-align: center;
+    }
+    .flashcard:hover {
+      background: #eef;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>📘 StudySync Pro</h1>
+    <h1>StudySync Pro</h1>
     <nav>
       <a href="dashboard.html">Dashboard</a>
+      <a href="planner.html">Study Planner</a>
+      <a href="quizzes.html">Quizzes</a>
+      <a href="explain.html">Explain</a>
+      <a href="flashcards.html">Flashcards</a>
     </nav>
   </header>
 
   <main>
-    <h2>📇 Flashcards</h2>
+    <h2>Create and Study Flashcards</h2>
+    <form id="flashcard-form">
+      <label for="front">Front (Term):</label><br />
+      <input type="text" id="front" name="front" required /><br /><br />
+      <label for="back">Back (Definition):</label><br />
+      <input type="text" id="back" name="back" required /><br /><br />
+      <button type="submit">Add Flashcard</button>
+    </form>
 
-    <div class="flashcard-grid">
-      <div class="flashcard">
-        <div class="flashcard-inner">
-          <div class="flashcard-front">
-            What is the capital of France?
-          </div>
-          <div class="flashcard-back">
-            Paris 🇫🇷
-          </div>
-        </div>
-      </div>
-
-      <div class="flashcard">
-        <div class="flashcard-inner">
-          <div class="flashcard-front">
-            Define “photosynthesis”
-          </div>
-          <div class="flashcard-back">
-            The process by which plants make food using sunlight ☀️
-          </div>
-        </div>
-      </div>
-
-      <div class="flashcard">
-        <div class="flashcard-inner">
-          <div class="flashcard-front">
-            What does CPU stand for?
-          </div>
-          <div class="flashcard-back">
-            Central Processing Unit 💻
-          </div>
-        </div>
-      </div>
-    </div>
+    <section class="card-container" id="flashcard-container"></section>
   </main>
 
   <footer>
     <p>&copy; 2025 StudySync Pro</p>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

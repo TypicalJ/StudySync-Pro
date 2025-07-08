@@ -1,46 +1,32 @@
-<!-- quizzes.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz Generator - StudySync</title>
+  <title>Quiz Generator | StudySync Pro</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>📘 StudySync Pro</h1>
+    <h1>StudySync Pro</h1>
     <nav>
       <a href="dashboard.html">Dashboard</a>
+      <a href="planner.html">Study Planner</a>
+      <a href="quizzes.html">Quizzes</a>
+      <a href="explain.html">Explain</a>
+      <a href="flashcards.html">Flashcards</a>
     </nav>
   </header>
 
   <main>
-    <h2>📝 Generate a Practice Quiz</h2>
-
-    <form id="quizForm">
-      <label for="notes">Paste Your Notes or Material:</label>
-      <textarea id="notes" name="notes" placeholder="e.g. The mitochondria is the powerhouse of the cell..." required></textarea>
-      <button type="submit" class="btn">Generate Quiz</button>
+    <h2>Generate Practice Quizzes</h2>
+    <form id="quiz-form">
+      <label for="notes">Paste your class notes or a topic summary:</label><br />
+      <textarea id="notes" name="notes" rows="6" cols="50" placeholder="e.g., Photosynthesis is the process..." required></textarea><br /><br />
+      <button type="submit">Generate Quiz</button>
     </form>
 
-    <section id="quizOutput" style="display: none;">
-      <h3>Your Practice Quiz</h3>
-      <ol class="quiz-list">
-        <li>
-          <strong>What is the function of mitochondria?</strong><br>
-          <label><input type="radio" name="q1"> It stores DNA</label><br>
-          <label><input type="radio" name="q1"> It powers the cell ✅</label><br>
-          <label><input type="radio" name="q1"> It controls cell division</label><br>
-        </li>
-        <li>
-          <strong>Which organelle is responsible for protein synthesis?</strong><br>
-          <label><input type="radio" name="q2"> Ribosomes ✅</label><br>
-          <label><input type="radio" name="q2"> Nucleus</label><br>
-          <label><input type="radio" name="q2"> Golgi apparatus</label><br>
-        </li>
-      </ol>
-    </section>
+    <section id="quiz-output" style="margin-top: 2rem;"></section>
   </main>
 
   <footer>

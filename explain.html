@@ -1,35 +1,33 @@
-<!-- explain.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Concept Explainer - StudySync</title>
+  <title>Explain Concepts | StudySync Pro</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>📘 StudySync Pro</h1>
+    <h1>StudySync Pro</h1>
     <nav>
       <a href="dashboard.html">Dashboard</a>
+      <a href="planner.html">Study Planner</a>
+      <a href="quizzes.html">Quizzes</a>
+      <a href="explain.html">Explain</a>
+      <a href="flashcards.html">Flashcards</a>
     </nav>
   </header>
 
   <main>
-    <h2>💡 Concept Explainer</h2>
-
-    <form id="explainForm">
-      <label for="question">What's confusing you?</label>
-      <input type="text" id="question" name="question" placeholder="e.g. What is a derivative?" required>
-      <button type="submit" class="btn">Explain It Simply</button>
+    <h2>Need Help Understanding a Concept?</h2>
+    <form id="explain-form">
+      <label for="concept">Enter a topic or question:</label><br />
+      <input type="text" id="concept" name="concept" placeholder="e.g., What is mitosis?" required />
+      <br /><br />
+      <button type="submit">Explain It Simply</button>
     </form>
 
-    <section id="explanationOutput" style="display: none;">
-      <h3>Simple Explanation:</h3>
-      <p id="fakeExplanation">
-        A derivative tells you how fast something is changing. Think of it like the speedometer in a car — it shows how quickly your position changes over time.
-      </p>
-    </section>
+    <section id="explanation-output" style="margin-top: 2rem;"></section>
   </main>
 
   <footer>
